@@ -13,7 +13,7 @@ class PathwayApp:
         self.pathway_var = tk.StringVar()
         self.pathway_var.set("")
 
-        self.pathways = ["Krebs Cycle", "Glycolysis", "Electron Transport Chain"]
+        self.pathways = ["Krebs Cycle", "Glycolysis", "Electron Transport Chain"] #add more pathways if you want
         self.pathway_menu = tk.OptionMenu(root, self.pathway_var, *self.pathways)
         self.pathway_menu.pack()
 
@@ -26,14 +26,14 @@ class PathwayApp:
         self.image_label = tk.Label(root)
         self.image_label.pack()
 
-        self.pathway_descriptions = {
+        self.pathway_descriptions = { #add descriptions of each pathways in detail
             "Krebs Cycle": "Description of Krebs Cycle...",
             "Glycolysis": "Description of Glycolysis...",
             "Electron Transport Chain": "Description of Electron Transport Chain..."
         }
 
-        self.pathway_images = {
-            "Krebs Cycle": "krebs_cycle.png",
+        self.pathway_images = { #adding the image
+            "Krebs Cycle": "krebs_cycle.png", #name of the image and make sure the image file is in the same directory
             "Glycolysis": "glycolysis.png",
             "Electron Transport Chain": "electron_transport_chain.png"
         }
